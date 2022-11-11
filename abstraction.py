@@ -1,27 +1,19 @@
+lst = [10, 20, 30, 40, 50]
 
-distance1 = 10
-distance2 = 20
-distance3 = 30
-distance4 = 40
-distance5 = 50
+paths = {'path1':[10, 20, 30], 'path2':[20, 30, 40], 'path3':[50, 40, 30]}
 
-path1 = [distance1,distance2,distance3]
-path2 = [distance2,distance3,distance4]
-path3 = [distance5,distance4,distance3]
+def driveDistance(dist):
+    print(dist)
 
-def driveToDistance1():
-    print(distance1)
+def followPath(pathlst):
+    print(pathlst[0],pathlst[1],pathlst[2])
 
-def driveToDistance2():
-    print(distance2)
+driveDistance(lst[0])
 
-def followPath1():
-    print(path1)
+driveDistance(lst[1])
 
-def followPath2():
-    print(path2)
+followPath(paths['path1'])
 
-driveToDistance1()
-driveToDistance2()
-followPath1()
-followPath2()
+followPath(paths['path2'])
+
+followPath(paths['path3'])
