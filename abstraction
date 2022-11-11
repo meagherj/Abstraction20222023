@@ -1,0 +1,19 @@
+distanceList = [10,20,30,40,50]
+
+paths = {
+    "path1":[distanceList[0],distanceList[1],distanceList[2]],
+    "path2":[distanceList[1],distanceList[2],distanceList[3]],
+    "path3":[distanceList[4],distanceList[3],distanceList[2]]
+    }
+
+
+print(distanceList[0])
+print(distanceList[1])
+
+def followPath1():
+    print(paths["path1"])
+def followPath2():
+    print(paths["path2"])
+
+followPath1()
+followPath2()
