@@ -1,25 +1,19 @@
+distances=[10,20,30,40,50]
 
-distance1 = 10
-distance2 = 20
-distance3 = 30
-distance4 = 40
-distance5 = 50
-
-path1 = [distance1,distance2,distance3]
-path2 = [distance2,distance3,distance4]
-path3 = [distance5,distance4,distance3]
+pathes = [(distances[0],distances[1],distances[2])],[(distances[1],distances[2],distances[3])]
+path3 = [distances[4],distances[3],distances[2]]
 
 def driveToDistance1():
-    print(distance1)
+    print(distances[0])
 
 def driveToDistance2():
-    print(distance2)
+    print(distances[1])
 
 def followPath1():
-    print(path1)
+    print(pathes[0])
 
 def followPath2():
-    print(path2)
+    print(pathes[1])
 
 driveToDistance1()
 driveToDistance2()
