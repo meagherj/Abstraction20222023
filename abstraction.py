@@ -1,16 +1,17 @@
 distances={'distance1': 10,'distance2': 20,'distance3':30,'distance4': 40, 'distance5': 50}
-paths={'path1': [distance1, distance2, distance3], 'path2': [distance2, distance3, distance4], 'path3': [distance5, distance4, distance3]}
+paths={'path1': [distances ['distance1'] , distances ['distance2'] , distances ['distance2']], 'path2': [distances ['distance2'], distances ['distance3'], distances ['distance4']], 'path3': [distances ['distance5'], distances['distance4'], distances['distance3']}
 
 
-def driveToDistances():
-    print(distances)
+def driveToDistances(distance):
+    print(distance)
+ 
 
-def followPaths():
-    print(paths)
+def followPaths(path):
+    print(path)
 
 
 
-driveToDistance1([distance1])
-driveToDistance2([distance2])
-followPath1([path1])
-followPath2([path2])
+driveToDistances(distances['distance1'])
+driveToDistances(distances['distance2'])
+followPaths(paths['path1'])
+followPaths(paths['path2'])
