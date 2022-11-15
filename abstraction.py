@@ -8,10 +8,10 @@ allpaths = {1:[distances[0], distances[1], distances[2]], 2:[distances[1], dista
 def driveToDistances(distance):
     print(distance)
     
-def followPath1():
-    print("path 1:",allpaths[1])
-    print("path 2:",allpaths[2])
+def followPath1(mypath):
+    print(mypath)
 
 driveToDistances(distances[1])
 driveToDistances(distances[2])
-followPath1()
+followPath1(allpaths[1])
+followPath1(allpaths[2])
