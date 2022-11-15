@@ -1,20 +1,17 @@
-distance = [10, 20, 30, 40]
+distance = {1:10, 2:20, 3:30, 4:40, 5:50}
 
-paths= [(distance[0], distance[1], distance[2]), (distance[1], distance[2], distance[3])]
+paths = {1:[distance[1], distance[2], distance[3]], 2:[distance[2], distance[3], distance[4]]}
 
-def driveToDistance1():
-    print(distance[0])
+driveToDistance = [(distance[1]), (distance[2])]
 
-def driveToDistance2():
-    print(distance[1])
+followPath = [(paths[1]), (paths[2])]
 
-def followPath1():
-    print(paths[0])
+def driveToDistance(d):
+    print(distance[d])
+def followPath(f):
+    print(paths[f])
 
-def followPath2():
-    print(paths[1])
-
-driveToDistance1()
-driveToDistance2()
-followPath1()
-followPath2()
+driveToDistance(1)
+driveToDistance(2)
+followPath(1)
+followPath(2)
