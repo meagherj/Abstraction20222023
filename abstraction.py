@@ -1,27 +1,16 @@
 
-distance1 = 10
-distance2 = 20
-distance3 = 30
-distance4 = 40
-distance5 = 50
+distance = {1: 10, 2:20, 3:30, 4: 40}
 
-path1 = [distance1,distance2,distance3]
-path2 = [distance2,distance3,distance4]
-path3 = [distance5,distance4,distance3]
+# dictionary (above)
 
-def driveToDistance1():
-    print(distance1)
+path = {1 : [distance[1],distance[2],distance[3]], 2 : [distance[2],distance[3],distance[4]]}
 
-def driveToDistance2():
-    print(distance2)
 
-def followPath1():
-    print(path1)
+def driveToDist(x):
+    print(distance[x])
 
-def followPath2():
-    print(path2)
+def followPath(x):
+    print(path(x))
 
-driveToDistance1()
-driveToDistance2()
-followPath1()
-followPath2()
+driveToDist()
+followPath()
