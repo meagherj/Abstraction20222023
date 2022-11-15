@@ -12,4 +12,4 @@ def followPath(path):
 driveToDistance(distances[1])
 driveToDistance(distances[2])
 followPath(path[1])
-followPath(path[2])Creat
+followPath(path[2])
