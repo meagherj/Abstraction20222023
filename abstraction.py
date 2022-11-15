@@ -10,7 +10,11 @@ def driveToDist(x):
     print(distance[x])
 
 def followPath(x):
-    print(path(x))
+    print(path[x])
 
-driveToDist()
-followPath()
+driveToDist(1)
+driveToDist(2)
+driveToDist(3)
+followPath(1)
+followPath(2)
+
