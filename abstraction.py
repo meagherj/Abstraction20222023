@@ -1,27 +1,20 @@
 
-distance1 = 10
-distance2 = 20
-distance3 = 30
-distance4 = 40
-distance5 = 50
+whipDometers = {1:10, 2:20, 3:30, 4:40, 5:50}
 
-path1 = [distance1,distance2,distance3]
-path2 = [distance2,distance3,distance4]
-path3 = [distance5,distance4,distance3]
 
-def driveToDistance1():
-    print(distance1)
+theseWays = {1:[10, 20, 30], 2:[20, 30, 40], 3:[50, 40, 30]}
 
-def driveToDistance2():
-    print(distance2)
 
-def followPath1():
-    print(path1)
+def whereYaHeaded(whipDometers):
+    print(whipDometers)
 
-def followPath2():
-    print(path2)
 
-driveToDistance1()
-driveToDistance2()
-followPath1()
-followPath2()
+def whichaWayaUGo(theseWays):
+    print(theseWays)
+
+    whereYaHeaded(whipDometers[1])
+    whereYaHeaded(whipDometers[2])
+        whereYaHeaded(whipDometers[3])
+   whichaWayaUGo(theseWays[1])
+whichaWayaUGo(theseWays[2])
+whichaWayaUGo(theseWays[3])
