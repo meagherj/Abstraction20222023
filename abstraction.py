@@ -11,10 +11,10 @@ def whereYaHeaded(whipDometers):
 
 def whichaWayaUGo(theseWays):
     print(theseWays)
-
-    whereYaHeaded(whipDometers[1])
-    whereYaHeaded(whipDometers[2])
-    whereYaHeaded(whipDometers[3])
-    whichaWayaUGo(theseWays[1])
-    whichaWayaUGo(theseWays[2])
-    whichaWayaUGo(theseWays[3])
+    
+whereYaHeaded(whipDometers[1])
+whereYaHeaded(whipDometers[2])
+whereYaHeaded(whipDometers[3])
+whichaWayaUGo(theseWays[1])
+whichaWayaUGo(theseWays[2])
+whichaWayaUGo(theseWays[3])
